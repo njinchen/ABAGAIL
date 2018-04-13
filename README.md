@@ -61,7 +61,7 @@ Note: you may have to move this block to the beginning if your python doesn't ex
 
 The differences I have specifically in my version are:
 * the activation function from HyperbolicTangentSigmoid to LogisticSigmoid in BackPropogationNetworkFactory.java
-* The learning rate to be .001 instead of .000001 in RROPUpdateRule.java
+* The learning rate to be .001 instead of .000001 in RPROPUpdateRule.java
 This was done to match the same hyperparameters when I did previous assignments using python/sklearn.
 
 

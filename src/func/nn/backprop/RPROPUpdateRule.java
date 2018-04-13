@@ -47,7 +47,7 @@ public class RPROPUpdateRule extends WeightUpdateRule {
 	 * Make a new rprop update rule with default values
 	 */
 	public RPROPUpdateRule() {
-		this(.1, 50, .000001);
+		this(.1, 50, .001);
 	}
 
 	/**

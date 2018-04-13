@@ -16,7 +16,7 @@ import func.nn.activation.LogisticSigmoid;
 public class BackPropagationNetworkFactory {
 
     /**
-     * Create a multilayer perceptron
+     * Create a multilayer perceptron	
      * @param nodeCounts the number of nodes in each layer
      * @param transfer a list of transfer functions for each layer, except the last layer
      * @param outputLayer the output layer of the network
@@ -82,7 +82,7 @@ public class BackPropagationNetworkFactory {
         for (int i = 0; i < nodeCounts.length-1; i++) {
             transfers[i] = transfer;
         }
-		return createRegressionNetwork(nodeCounts, new HyperbolicTangentSigmoid());
+		return createRegressionNetwork(nodeCounts, new LogisticSigmoid());
 	}
 
 	/**
